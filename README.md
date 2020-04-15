@@ -1,2 +1,2 @@
 # Estudonauta
- Repositório pessoal contendo exercícios realizados do Estudonauta
+Repositório pessoal contendo exercícios propostos pelo Profº @gustavoguanabara por meio de seu site educacional pago Estudonauta.Que contém cursos mais avançados relacionados a programação e outras tecnologias como: Algoritmos(Portugol Studio),Desenvolvimento Android,Linux,Manutenção de Redes de computadores entre outros Exercícios esses solucionados por mim para fins de treinamento e aprimoramento da habilidade da programação.
