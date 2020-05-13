@@ -33,43 +33,42 @@ programa
 			escreva("Idade: ")
 			leia(idade)
 
-			
-			se(cont == 1){
-					//Homens
-					se(sexo == 'm' ou  sexo == 'M' e idade_homem_jovem == 0){
-						nome_homem_jovem = nome
-						idade_homem_jovem = idade
-						nome_homem_velho = nome
-						idade_homem_velho = idade
-					}
-					//Mulheres
-					se(sexo == 'f' ou  sexo == 'F' e idade_mulher_jovem == 0){
-						nome_mulher_jovem = nome
-						idade_mulher_jovem = idade
-						nome_mulher_velha = nome
-						idade_mulher_velha = idade
-					}
-			}senao{
-				//Homens
-				se(sexo == 'M' ou sexo == 'm' e idade > idade_homem_velho){
+			//Homens
+			se(sexo == 'M' ou sexo == 'm'){
+				se(idade_homem_jovem == 0){
+					idade_homem_jovem = idade
+					idade_homem_velho = idade
+					nome_homem_jovem = nome
+					nome_homem_velho = nome
+				}
+				se(idade > idade_homem_velho){
 					nome_homem_velho = nome
 					idade_homem_velho = idade
 				}
-				se(sexo == 'M' ou sexo == 'm' e idade < idade_homem_jovem){
+				se(idade < idade_homem_jovem){
 					nome_homem_jovem = nome
 					idade_homem_jovem = idade
 				}
-				//Mulheres
-				se(sexo == 'F' ou sexo == 'f' e idade > idade_mulher_velha){
+			}
+
+			//Mulheres
+			se(sexo == 'F' ou sexo == 'f'){
+				se(idade_mulher_jovem == 0){
+					idade_mulher_jovem = idade
+					idade_mulher_velha = idade
+					nome_mulher_jovem = nome
+					nome_mulher_velha = nome
+				}
+				se(idade > idade_mulher_velha){
 					nome_mulher_velha = nome
 					idade_mulher_velha = idade
 				}
-				se(sexo == 'F' ou sexo == 'f' e idade < idade_mulher_jovem){
+				se(idade < idade_mulher_jovem){
 					nome_mulher_jovem = nome
 					idade_mulher_jovem = idade
 				}
-			
 			}
+			
 			cont++
 		}
 
@@ -89,7 +88,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1042; 
+ * @POSICAO-CURSOR = 847; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
